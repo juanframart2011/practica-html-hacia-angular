@@ -1,0 +1,47 @@
+<div *ngIf="product">
+
+
+	<header class="rk-portfolio-cover" [ngStyle]="{'background-image':'url(assets/productos/'+ product_title +'/main.jpg)' }" style="background-position: 50% 100%;">
+		<div class="item-inside__meta">
+			<h1 class="ae-u-bolder rk-portfolio-title ">{{ product.producto }}</h1>
+			<p class="ae-theta rk-portfolio-category ">{{ product.categoria }}</p>
+		</div>
+	</header>
+
+	<div class="ae-container-fluid">
+		<div class="ae-grid ae-grid--collapse rk-portfolio-info ">
+			<div class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left">
+				<h2 class="rk-portfolio-inner-title ">{{ product.producto }}</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+
+		<div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+			<div class="ae-grid__item item-lg-5 au-lg-ptp-1">
+				<h4 class="ae-u-bolder">{{ product.subtitulo1 }}</h4>
+				<p class="ae-eta">{{ product.desc1 }}</p>
+			</div>
+			<div class="ae-grid__item item-lg-6 item-lg--offset-1"><img src="assets/productos/{{ product_title }}/pic-1.jpg" alt="{{ product.subtitulo1 }}"></div>
+		</div>
+
+		<div class="ae-grid ae-grid--collapse">
+			<div class="ae-grid__item item-lg-8"><img src="assets/productos/{{ product_title }}/pic-2.jpg" alt="{{ product.subtitulo2 }}"></div>
+			<div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
+				<p>{{ product.desc2 }}</p>
+				<p class="ae-u-bolder">{{ product.subtitulo2 }}</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="ae-container-fluid au-pt-4 au-pb-4">
+		<div class="group-buttons">
+			<a href="#0" class="au-mt-2 arrow-button arrow-button--right">Next Project<span class="arrow-cont">
+				<svg>
+					<use xlink:href="assets/img/symbols.svg#arrow"></use>
+				</svg></span>
+			</a>
+		</div>
+	</div>
+</div>
