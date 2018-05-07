@@ -11,7 +11,7 @@ export class SearchComponent{
 
 	text:string = null;
 
-	constructor( private _ps:ProductService, private _route:ActivatedRoute ){
+	constructor( public _ps:ProductService, private _route:ActivatedRoute ){
 
 		_route.params.subscribe( params=>{
 
