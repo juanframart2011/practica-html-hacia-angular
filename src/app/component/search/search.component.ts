@@ -15,8 +15,6 @@ export class SearchComponent{
 
 		_route.params.subscribe( params=>{
 
-			console.log( params );
-
 			this.text = params["id"];
 
 			_ps.product_seacrh( this.text );

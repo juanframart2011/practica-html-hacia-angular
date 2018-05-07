@@ -20,7 +20,6 @@ export class ItemComponent{
 			_ps.product_info( params["id"] )
 			.subscribe( res => {
 
-				console.log( res.json() );
 				this.product = res.json();
 			})
 		});
